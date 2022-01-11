@@ -13,7 +13,7 @@
 
 - Run git clone on this project at the desired directory:
   ```
-  git clone git@github.com:DyaryRaoof/catalog-of-things.git
+  git clone git@github.com:DyaryRaoof/blogger.git
   ```
 - Go to the cloned directory with `cd blogger`
 - Install the required dependecies with `bundle install`
