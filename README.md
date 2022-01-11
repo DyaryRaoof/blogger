@@ -6,8 +6,8 @@
 
 ## Prerequisites
 
-Ruby on Rails
-Postgresql
+- Ruby on Rails
+- PostgreSQL
 
 ## Getting Started
 
@@ -17,7 +17,7 @@ Postgresql
   ```
 - Go to the cloned directory with `cd blogger`
 - Install the required dependecies with `bundle install`
-- With Ruby on Rails and Postgresql installed in your environment, you can run `rails s` to see the website
+- With Ruby on Rails and PostgreSQL installed in your environment, you can run `rails s` to see the website
 
 ## Author
 
