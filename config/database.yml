@@ -1,17 +1,18 @@
-development:
+default: &default
   adapter: postgresql
   encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
   database: blogger_development
-  pool: 5
-  username: dyaryraoof
-  password:
-  timeout: 5000
 
 test:
-  adapter: postgresql
-  encoding: unicode
+  <<: *default
+  database: blogger_test
+
+production:
+  <<: *default
   database: blogger_production
-  pool: 5
-  username: dyaryraoof
-  password:
-  timeout: 5000
+  username: blogger
+  password: <%= ENV["HELLORAILS_DATABASE_PASSWORD"] %>
