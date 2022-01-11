@@ -1,24 +1,44 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Blogger
 
-Things you may want to cover:
+> The Blogger app is be a classic example of a blog website. I created a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-* Ruby version
+## Prerequisites
 
-* System dependencies
+Ruby on Rails
+Postgresql
 
-* Configuration
+## Getting Started
 
-* Database creation
+- Run git clone on this project at the desired directory:
+  ```
+  git clone git@github.com:DyaryRaoof/catalog-of-things.git
+  ```
+- Go to the cloned directory with `cd blogger`
+- Install the required dependecies with `bundle install`
+- With Ruby on Rails and Postgresql installed in your environment, you can run `rails s` to see the website
 
-* Database initialization
+## Author
 
-* How to run the test suite
+- GitHub: [@DyaryRaoof](https://github.com/DyaryRaoof)
+- Twitter: [@DyaryRaoof](https://twitter.com/DyaryRaoof)
+- LinkedIn: [@DyaryRaoof](https://linkedin.com/in/DyaryRaoof)
 
-* Services (job queues, cache servers, search engines, etc.)
+## 🤝 Contributing
 
-* Deployment instructions
+Contributions, issues, and feature requests are welcome!
 
-* ...
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
