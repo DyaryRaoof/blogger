@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: blogger_development
+  pool: 5
+  username: dyaryraoof
+  password:
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: blogger_production
+  pool: 5
+  username: dyaryraoof
+  password:
+  timeout: 5000
