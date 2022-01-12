@@ -34,5 +34,4 @@ RSpec.describe 'users', type: :request do
       expect(response.body).to include('<h1>this is a single user </h1>')
     end
   end
-
 end

@@ -34,5 +34,4 @@ RSpec.describe 'posts', type: :request do
       expect(response.body).to include('<h1>this is a single post </h1>')
     end
   end
-
 end
