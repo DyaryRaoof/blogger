@@ -19,6 +19,11 @@
 - Install the required dependecies with `bundle install`
 - With Ruby on Rails and PostgreSQL installed in your environment, you can run `rails s` to see the website
 
+## Tests
+
+- To run the tests you must first have run `bundle install`
+- Then in the repository's main directory run `bundle exec rspec spec`
+
 ## Author
 
 - GitHub: [@DyaryRaoof](https://github.com/DyaryRaoof)
