@@ -1,5 +1,8 @@
 <%= render "/users/single_user", u: @user%>
 <% @posts.each do |p| %>
     <%= render '/posts/single_post', p:p %>
+    <%= render 'list_of_comments', comments: Comment.where(author_id: p.author_id, post_id: p.id),user: @user %>
 <% end %>
-<%= render 'list_of_comments', comments: @comments, user: @user %>
+<div style="display: flex; justify-content: center; width: 100%; margin-top: 30px">
+    <button>Pagination</button>
+</div>

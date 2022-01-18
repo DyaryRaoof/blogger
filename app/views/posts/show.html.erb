@@ -1,1 +1,13 @@
-<h1>this is a single post </h1>
+<div style="border: 3px solid black; padding: 3px; display: flex; justify-content: space-between">
+    <span>
+        <p><%= @post.title %> by <%= @user.name%></p>
+        <p><%= @post.text%></p>
+    </span>
+    <span>
+        <p>
+            Comments: <%= @post.comments_counter%>, Likes: <%= @post.likes_counter%>
+        </p>
+    </span>
+
+</div>
+<p><%= render 'list_of_comments', comments: @comments, user: @user %></p>

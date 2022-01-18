@@ -1,5 +1,7 @@
-<div style="border: 3px solid black; padding: 3px">
-    <% comments.each do |c|%>
-        <p><%=user.name %>: <%=  c.text %></p>
-    <% end %>
-</div>
+<% if comments.length > 0%>
+    <div style="border: 3px solid black; padding: 3px">
+        <% comments.each do |c|%>
+            <p><%=user.name %>: <%=  c.text %></p>
+        <% end %>
+    </div>
+<% end %>
