@@ -27,8 +27,12 @@ wendy = User.create!(
    
    post1 = wendy.posts.create!(title: 'Cats and Dogs', text: 'this is first post about cats and dogs!', comments_counter: 0, likes_counter: 0)
    post2 = john.posts.create!(title: 'Never ending fun', text: 'this is second post but I don\'t think I should create another post again', comments_counter: 0, likes_counter: 0)
+   post3 = john.posts.create!(title: 'The end of the world', text: 'it all around the corner', comments_counter: 0, likes_counter: 0)
    
    wendy.comments.create!(text: 'really nice post Michael', post: post1)
+   wendy.comments.create!(text: 'Absolutely amazing', post: post1)
    john.comments.create!(text: 'Well Done 👏👏👏', post: post1)
    john.comments.create!(text: 'Love 💓 it!!!', post: post1)
+   john.comments.create!(text: 'I am with you to the bone man!', post: post1)
+
    
