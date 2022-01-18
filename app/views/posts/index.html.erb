@@ -3,6 +3,6 @@
     <%= render '/posts/single_post', p:p %>
     <%= render 'list_of_comments', comments: Comment.where(author_id: p.author_id, post_id: p.id),user: @user %>
 <% end %>
-<div style="display: flex; justify-content: center; width: 100%; margin-top: 30px">
+<div class="center-button">
     <button>Pagination</button>
 </div>

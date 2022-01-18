@@ -1,5 +1,5 @@
 <%= render 'single_user', u: @user%>
-<div style="font-weight: bold; border: 3px solid black; margin-top: 10px; padding: 10px">
+<div class="user-bio padding-3-pixels main-border">
     <div style="margin-bottom: 10px">Bio</div>
     <%= @user.bio %>
 </div>
@@ -8,6 +8,6 @@
         <%= render '/posts/single_post', p:p %>
     <% end %>
 <% end %>
-<div style="display: flex; justify-content: center; width: 100%">
+<div class="center-button">
     <button>See all posts</button>
 </div>
