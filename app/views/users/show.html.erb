@@ -1,1 +1,13 @@
-<h1>this is a single user </h1>
+<%= render 'single_user', u: @user%>
+<div style="font-weight: bold; border: 3px solid black; margin-top: 10px; padding: 10px">
+    <div style="margin-bottom: 10px">Bio</div>
+    <%= @user.bio %>
+</div>
+<% @posts.each do |p| %>
+    <% if p.id < 4 %> 
+        <%= render '/posts/single_post', p:p %>
+    <% end %>
+<% end %>
+<div style="display: flex; justify-content: center; width: 100%">
+    <button>See all posts</button>
+</div>

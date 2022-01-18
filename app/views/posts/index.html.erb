@@ -1,1 +1,9 @@
-<h1>This is a list of posts<h1>
+<%= render "/users/single_user", u: @user%>
+<% @posts.each do |p| %>
+    <%= render '/posts/single_post', p:p %>
+<% end %>
+<div style="border: 3px solid black; padding: 3px">
+    <% @comments.each do |c|%>
+        <p><%=@user.name %>: <%=  c.text %></p>
+    <% end %>
+</div>
