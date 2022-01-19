@@ -11,3 +11,6 @@
 
 </div>
 <p><%= render 'list_of_comments', comments: @comments, user: @user %></p>
+<div class="center-button">
+    <%= link_to 'New Comment', new_user_post_comment_path(post_id: params[:id]), class: 'btn btn-secondary mb-3 text-center' %>
+</div>
