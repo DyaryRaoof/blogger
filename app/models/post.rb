@@ -3,13 +3,13 @@ class Post < ApplicationRecord
   has_many :comment
   has_many :like
 
-  def update_posts_counter_for_user
+  def self.update_posts_counter_for_user
     u = User.find(author_id)
     u.posts_counter += 1
     u.save
   end
 
-  def five_most_recent_comments
-    Comment.where(post_id: id).order(created_at: :desc).limit(5)
+  def self.five_most_recent_comments(author_id, post_id)
+    comments = Comment.where(author_id: author_id, post_id: post_id).order(created_at: :desc).limit(5)
   end
 end
