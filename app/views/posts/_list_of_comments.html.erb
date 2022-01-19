@@ -1,0 +1,7 @@
+<% if comments.length > 0%>
+    <div class="main-border padding-3-pixels">
+        <% comments.each do |c|%>
+            <p><%=user.name %>: <%=  c.text %></p>
+        <% end %>
+    </div>
+<% end %>

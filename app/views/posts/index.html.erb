@@ -1,1 +1,8 @@
-<h1>This is a list of posts<h1>
+<%= render "/users/user", user: @user%>
+<% @posts.each do |p| %>
+    <%= render 'post', post:p %>
+    <%= render 'list_of_comments', comments: Post.five_most_recent_comments(p.author_id, p.id),user: @user %>
+<% end %>
+<div class="center-button">
+    <button>Pagination</button>
+</div>

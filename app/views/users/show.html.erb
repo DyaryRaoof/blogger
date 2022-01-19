@@ -1,1 +1,10 @@
-<h1>this is a single user </h1>
+<%= render 'user', user: @user%>
+<div class="user-bio padding-3-pixels main-border">
+    <div style="margin-bottom: 10px">Bio</div>
+    <%= @user.bio %>
+</div>
+<%= render @posts %>
+
+<div class="center-button">
+    <button>See all posts</button>
+</div>
