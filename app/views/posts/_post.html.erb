@@ -1,7 +1,7 @@
 <div class="single-post-box main-border padding-3-pixels ">
 <div class="d-flex justify-content-between w-100">
     <div><%= post.title%></div>
-    <%= button_to 'Like', {:controller => "likes", :action => "create", :user_id => params[:user_id], :post_id=> post.id} , :method=>:post, class: "btn btn-primary"  %>
+    <%= button_to 'Like', {:controller => "likes", :action => "create", :user_id => user_id, :post_id=> post.id} , :method=>:post, class: "btn btn-primary"  %>
 </div>
     <div><%= post.text[0..200]%></div>
     <p class="text-align-end">Comments: <%= post.comments_counter%>, Likes: <%= post.likes_counter%></p>

@@ -1,6 +1,6 @@
 <%= render "/users/user", user: @user%>
 <% @posts.each do |p| %>
-    <%= render 'post', post:p %>
+    <%= render 'post', post:p,  user_id: @user.id %>
     <%= render 'list_of_comments', comments: Post.five_most_recent_comments(p.author_id, p.id),user: @user %>
 <% end %>
 
