@@ -1,8 +1,10 @@
 <%= render "/users/user", user: @user%>
 <% @posts.each do |p| %>
-    <%= render 'post', post:p %>
+    <%= render 'post', post:p,  user_id: @user.id %>
     <%= render 'list_of_comments', comments: Post.five_most_recent_comments(p.author_id, p.id),user: @user %>
 <% end %>
+
 <div class="center-button">
-    <button>Pagination</button>
+    <%= link_to 'New Post', new_user_post_path, class: 'btn btn-secondary mb-3 text-center small-button' %>
+    <button class="btn btn-secondary mb-5">Pagination</button>
 </div>

@@ -3,7 +3,7 @@
     <div style="margin-bottom: 10px">Bio</div>
     <%= @user.bio %>
 </div>
-<%= render @posts %>
+<%= render @posts, user_id: params[:id]%>
 
 <div class="center-button">
     <button>See all posts</button>
