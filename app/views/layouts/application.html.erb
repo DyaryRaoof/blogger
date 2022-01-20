@@ -12,6 +12,12 @@
   </head>
 
   <body>
+   <% flash.each do |name, msg| -%>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <strong ><%= msg %></strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <% end -%>
     <div style="margin: 0 100px">
       <%= yield %>
     </div>
