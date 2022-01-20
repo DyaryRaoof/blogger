@@ -5,7 +5,7 @@ class LikesController < ApplicationController
 
   def create
     @like = Like.new(post_id: params[:post_id], author_id: params[:user_id])
-    if @like.save && @like.update_likes_counter_for_post(params[:post_id])
+    if @like.save && Like.update_likes_counter_for_post(params[:post_id])
       flash[:success] = 'Post liked successfully'
       redirect_back(fallback_location: root_path)
     else

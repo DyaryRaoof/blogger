@@ -3,7 +3,10 @@ class Post < ApplicationRecord
   has_many :comment
   has_many :like
 
-  def self.update_posts_counter_for_user
+  validates :title, presence: true, length: { maximum: 250 }
+  validates :comments_counter, :likes_counter, comparison: { greater_than_or_equal_to: 0 }, numericality: true
+
+  def self.update_posts_counter_for_user(author_id)
     u = User.find(author_id)
     u.posts_counter += 1
     u.save
