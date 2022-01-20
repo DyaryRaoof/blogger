@@ -12,26 +12,26 @@ RSpec.describe 'users', type: :request do
       expect(response).to render_template(:index)
     end
 
-    it 'works! reponse body includes <h1>This is a list of users<h1> ' do
+    it 'works! reponse body includes Wendy ' do
       get users_path
-      expect(response.body).to include('<h1>This is a list of users<h1>')
+      expect(response.body).to include('Wendy')
     end
   end
 
   describe 'GET /users/:id' do
     it 'works! returns correct status code' do
-      get user_path(1)
+      get user_path(User.first.id)
       expect(response).to have_http_status(200)
     end
 
     it 'works! renders show view correctly' do
-      get user_path(1)
+      get user_path(User.first.id)
       expect(response).to render_template(:show)
     end
 
-    it 'works! reponse body includes <h1>this is a single user </h1>' do
-      get user_path(1)
-      expect(response.body).to include('<h1>this is a single user </h1>')
+    it 'works! reponse body includes Wendy' do
+      get user_path(User.first.id)
+      expect(response.body).to include('Wendy')
     end
   end
 end
