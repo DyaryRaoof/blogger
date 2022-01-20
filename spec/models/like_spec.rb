@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Like, type: :model do
-  before(:all) do 
+  before(:all) do
     Rails.application.load_seed
   end
 
