@@ -49,6 +49,8 @@ gem 'bootsnap', require: false
 
 gem 'devise'
 
+gem 'cancancan'
+
 group :development, :test do
   gem 'bullet'
   gem 'capybara'
