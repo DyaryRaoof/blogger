@@ -1,3 +1,4 @@
+<%= button_to 'Sign out', destroy_user_session_path, method: :delete , class: 'btn btn-danger mb-3'%>
 <%= render 'user', user: @user%>
 <div class="user-bio padding-3-pixels main-border">
     <div style="margin-bottom: 10px">Bio</div>
